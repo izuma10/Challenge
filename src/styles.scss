@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+.container {
+    display: flex;
+}
+.fotos {
+    width: 50%;
+}
+.bizq {
+    background-color: darkgreen;
+    border-radius: 11%;
+    color: white;
+    margin-right: 10px;
+}
+.bdrch {
+    background-color:red;
+    border-radius: 11%;
+    color: white
+}

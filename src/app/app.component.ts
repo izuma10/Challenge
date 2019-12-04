@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { datosservice } from './datos.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'challenge';
+
+  datos : any[];
+
+  constructor(){
+    let datos = new datosservice();
+    this.datos = datos.getDatos();
+  }
 }
